@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+.vezes{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.vezes h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    height: 100px;
+}
+.cada_vez{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(193, 193, 223);
+    border-radius: 10px;
+    padding: 10px;
+    gap: 5px;
+}
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    gap: 10px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border-radius: 10px;
+
+}
+.cabecalho h2{
+    font-size: 18px;
+}
