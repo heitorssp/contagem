@@ -145,23 +145,23 @@
 <h1>Vou conseguir?</h1>
 </section>
 
-<!-- Firebase SDK -->
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js"></script>
+<!-- Firebase compatível (v8) -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 
 <script>
-  // 🔧 Configuração do Firebase (copie do console do Firebase)
-const firebaseConfig = {
-  apiKey: "AIzaSyA9DJLnuoNp-scCnF0T6zLfixqPeE37hes",
-  authDomain: "contagem-99775.firebaseapp.com",
-  projectId: "contagem-99775",
-  storageBucket: "contagem-99775.firebasestorage.app",
-  messagingSenderId: "235147517314",
-  appId: "1:235147517314:web:6300832034851c84bb039b"
-};
+  // Configuração do Firebase (substitua pelos seus dados reais)
+  const firebaseConfig = {
+    apiKey: "SUA_API_KEY",
+    authDomain: "SEU_PROJETO.firebaseapp.com",
+    projectId: "SEU_PROJETO",
+    storageBucket: "SEU_PROJETO.appspot.com",
+    messagingSenderId: "NUMERO",
+    appId: "APP_ID"
+  };
 
   // Inicializar Firebase
-  const app = firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
 
   let nomesPreDefinidos = ["Clarice 💕", "Heitor 🐾"];
