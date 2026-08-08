@@ -13,94 +13,80 @@
   <h1>🌹10 Encontros🌹<br><br> para Conseguir a Foto do Buquê</h1>
   <!-- Todas as divs iguais -->
   <div class="cada_vez" id="vez1">
-    <div class="cabecalho">
-      <h2>N° 1</h2>
-      <h2>Dificuldade: 8/10</h2>
+    <div class="cabecalho1">
+      <h2>N° 1 🩷</h2>
+      <h2>Eu me apaixonei</h2>
     </div>
     <div class="cabecalho">
-      <h2>Local: Boulevard Shopping</h2>
+      <h2>Local: Praça Gesner</h2>
       <h2>Data: 04/06/2026</h2>
     </div>
-    <div class="comentarios"></div>
-    <button onclick="toggleComentario(1)">Comentar</button>
   </div>
 
   <div class="cada_vez" id="vez2">
-    <div class="cabecalho">
-      <h2>N° 2</h2>
-      <h2>Dificuldade: 5/10</h2>
+    <div class="cabecalho1">
+      <h2>N° 2 ❤️🌹</h2>
+      <h2>Mostrei pra vc que estava apaixonado</h2>
     </div>
     <div class="cabecalho">
       <h2>Local: Praça Gesner</h2>
       <h2>Data: 05/06/2026</h2>
     </div>
-    <div class="comentarios"></div>
-    <button onclick="toggleComentario(2)">Comentar</button>
   </div>
 
     <div class="cada_vez" id="vez3">
-    <div class="cabecalho">
-      <h2>N° 3</h2>
-      <h2>Dificuldade: 1/10</h2>
+    <div class="cabecalho1">
+      <h2>N° 3 ❤️‍🔥</h2>
+      <h2>Foi o melhor dia, pq tive certeza que te amava</h2>
     </div>
     <div class="cabecalho">
       <h2>Local: Praça Gesner</h2>
       <h2>Data: 08/07/2026</h2>
     </div>
-    <div class="comentarios"></div>
-    <button onclick="toggleComentario(3)">Comentar</button>
   </div>  
   
   <div class="cada_vez" id="vez4">
-    <div class="cabecalho">
-      <h2>N° 4</h2>
-      <h2>Em Análise</h2>
+    <div class="cabecalho1">
+      <h2>N° 4 💜</h2>
+      <h2>Matei a saudade de você</h2>
     </div>
     <div class="cabecalho">
-      <h2></h2>
-      <h2></h2>
+      <h2>Local: Praça Gesner</h2>
+      <h2>Data: 02/04/2026</h2>
     </div>
-    <div class="comentarios"></div>
-    <button onclick="toggleComentario(4)">Comentar</button>
   </div>  
   
   <div class="cada_vez" id="vez5">
-    <div class="cabecalho">
-      <h2>N° 5</h2>
-      <h2>Em Análise</h2>
+    <div class="cabecalho1">
+      <h2>N° 5 💘</h2>
+      <h2>Sonhei com vc dormindo comigo e eu olhando sua mão</h2>
     </div>
     <div class="cabecalho">
-      <h2></h2>
-      <h2></h2>
+      <h2>Local: Praça Gesner</h2>
+      <h2>Data: 06/08/2026</h2>
     </div>
-    <div class="comentarios"></div>
-    <button onclick="toggleComentario(5)">Comentar</button>
   </div>  
   
   <div class="cada_vez" id="vez6">
-    <div class="cabecalho">
-      <h2>N° 6</h2>
-      <h2>Em Análise</h2>
+    <div class="cabecalho1">
+      <h2>N° 6 💜</h2>
+      <h2>Voltei rindo pras paredes e errei até o portão</h2>
     </div>
     <div class="cabecalho">
-      <h2></h2>
-      <h2></h2>
+      <h2>Local: Praça Gesner</h2>
+      <h2>Data: 08/08/2026</h2>
     </div>
-    <div class="comentarios"></div>
-    <button onclick="toggleComentario(6)">Comentar</button>
   </div>  
   
   <div class="cada_vez" id="vez7">
     <div class="cabecalho">
       <h2>N° 7</h2>
-      <h2>Em Análise</h2>
+      <h2></h2>
     </div>
     <div class="cabecalho">
       <h2></h2>
       <h2></h2>
     </div>
-    <div class="comentarios"></div>
-    <button onclick="toggleComentario(7)">Comentar</button>
   </div>  
   
   <div class="cada_vez" id="vez8">
@@ -112,8 +98,6 @@
       <h2></h2>
       <h2></h2>
     </div>
-    <div class="comentarios"></div>
-    <button onclick="toggleComentario(8)">Comentar</button>
   </div>  
   
   <div class="cada_vez" id="vez9">
@@ -125,8 +109,6 @@
       <h2></h2>
       <h2></h2>
     </div>
-    <div class="comentarios"></div>
-    <button onclick="toggleComentario(9)">Comentar</button>
   </div> 
   
   <div class="cada_vez" id="vez10">
@@ -138,81 +120,10 @@
       <h2></h2>
       <h2></h2>
     </div>
-    <div class="comentarios"></div>
-    <button onclick="toggleComentario(10)">Comentar</button>
   </div>
-
-<h1>Vou conseguir?</h1>
+<img src="img2.webp" alt="" class="figurinha">
+<h1>🌹Vou conseguir? 🌹</h1>
 </section>
 
-<script>
-let nomesPreDefinidos = ["Clarice 💕", "Heitor 🐾"]; // nomes fixos
-
-// Carregar comentários salvos
-window.onload = function() {
-  let comentariosSalvos = JSON.parse(localStorage.getItem("comentariosJSON") || "{}");
-  for (let id in comentariosSalvos) {
-    const div = document.getElementById("vez" + id);
-    if (div) {
-      div.querySelector(".comentarios").innerHTML = comentariosSalvos[id].join("<br>");
-    }
-  }
-};
-
-function toggleComentario(num) {
-  const div = document.getElementById("vez" + num);
-  const comentariosDiv = div.querySelector(".comentarios");
-  const btnComentar = div.querySelector("button");
-
-  let input = div.querySelector("input[type=text]");
-  let select = div.querySelector("select");
-  let btnEnviar = div.querySelector(".btn-enviar");
-
-  if (!input) {
-    btnComentar.style.display = "none";
-
-    // select de nomes
-    select = document.createElement("select");
-    nomesPreDefinidos.forEach(nome => {
-      let opt = document.createElement("option");
-      opt.value = nome;
-      opt.textContent = nome;
-      select.appendChild(opt);
-    });
-    div.appendChild(select);
-
-    // campo de texto
-    input = document.createElement("input");
-    input.type = "text";
-    input.placeholder = "Digite seu comentário...";
-    div.appendChild(input);
-
-    // botão enviar
-    btnEnviar = document.createElement("button");
-    btnEnviar.textContent = "Enviar";
-    btnEnviar.className = "btn-enviar";
-    btnEnviar.onclick = function() {
-      const valor = input.value;
-      const nomeEscolhido = select.value;
-      if (valor.trim() !== "") {
-        const comentarioFinal = nomeEscolhido + ": " + valor;
-
-        // salvar em localStorage
-        let comentariosSalvos = JSON.parse(localStorage.getItem("comentariosJSON") || "{}");
-        if (!comentariosSalvos[num]) comentariosSalvos[num] = [];
-        comentariosSalvos[num].push(comentarioFinal);
-        localStorage.setItem("comentariosJSON", JSON.stringify(comentariosSalvos));
-
-        comentariosDiv.innerHTML = comentariosSalvos[num].join("<br>");
-      }
-      input.remove();
-      select.remove();
-      btnEnviar.remove();
-      btnComentar.style.display = "inline-block";
-    };
-    div.appendChild(btnEnviar);
-  }
-}
-</script>
 </body>
 </html>
